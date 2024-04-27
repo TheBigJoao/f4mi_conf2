@@ -1,0 +1,160 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2798319181/effects/downsample.json",
+		"materials/workshop/2798319181/effects/coc.json",
+		"materials/workshop/2798319181/effects/bokeh.json",
+		"materials/workshop/2798319181/effects/gaussian_x.json",
+		"materials/workshop/2798319181/effects/gaussian_y.json",
+		"materials/workshop/2798319181/effects/gaussian_precise_x.json",
+		"materials/workshop/2798319181/effects/gaussian_precise_y.json",
+		"shaders/workshop/2798319181/effects/downsample.frag",
+		"shaders/workshop/2798319181/effects/downsample.vert",
+		"shaders/workshop/2798319181/effects/coc.frag",
+		"shaders/workshop/2798319181/effects/coc.vert",
+		"shaders/workshop/2798319181/effects/bokeh.frag",
+		"shaders/workshop/2798319181/effects/bokeh.vert",
+		"shaders/workshop/2798319181/effects/gaussian.frag",
+		"shaders/workshop/2798319181/effects/gaussian.vert"
+	],
+	"editable" : false,
+	"fbos" : 
+	[
+		{
+			"format" : "rgba_backbuffer",
+			"name" : "_downscaled1",
+			"scale" : 4
+		},
+		{
+			"format" : "rgba_backbuffer",
+			"name" : "_downscaled2",
+			"scale" : 4
+		},
+		{
+			"format" : "rgba_backbuffer",
+			"name" : "_full1",
+			"scale" : 1
+		},
+		{
+			"format" : "rgba_backbuffer",
+			"name" : "_full2",
+			"scale" : 1
+		},
+		{
+			"format" : "rg88",
+			"name" : "_coc",
+			"scale" : 4
+		}
+	],
+	"group" : "localeffects",
+	"name" : "Bokeh blur",
+	"passes" : 
+	[
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "previous"
+				}
+			],
+			"material" : "materials/workshop/2798319181/effects/downsample.json",
+			"target" : "_downscaled1"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_downscaled1"
+				}
+			],
+			"material" : "materials/workshop/2798319181/effects/coc.json",
+			"target" : "_coc"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "previous"
+				},
+				{
+					"index" : 2,
+					"name" : "_coc"
+				}
+			],
+			"material" : "materials/workshop/2798319181/effects/gaussian_precise_x.json",
+			"target" : "_full1"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_full1"
+				},
+				{
+					"index" : 1,
+					"name" : "previous"
+				},
+				{
+					"index" : 2,
+					"name" : "_coc"
+				}
+			],
+			"material" : "materials/workshop/2798319181/effects/gaussian_precise_y.json",
+			"target" : "_full2"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_downscaled1"
+				},
+				{
+					"index" : 1,
+					"name" : "_coc"
+				}
+			],
+			"material" : "materials/workshop/2798319181/effects/bokeh.json",
+			"target" : "_downscaled2"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_downscaled2"
+				},
+				{
+					"index" : 2,
+					"name" : "_coc"
+				}
+			],
+			"material" : "materials/workshop/2798319181/effects/gaussian_x.json",
+			"target" : "_downscaled1"
+		},
+		{
+			"bind" : 
+			[
+				{
+					"index" : 0,
+					"name" : "_downscaled1"
+				},
+				{
+					"index" : 1,
+					"name" : "_full2"
+				},
+				{
+					"index" : 2,
+					"name" : "_coc"
+				}
+			],
+			"material" : "materials/workshop/2798319181/effects/gaussian_y.json"
+		}
+	],
+	"replacementkey" : "bokeh_blur",
+	"version" : 1
+}

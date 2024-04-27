@@ -1,0 +1,15 @@
+{
+	"materialbasedirectory" : "",
+	"puppet" : 
+	{
+		"contours" : [],
+		"extrusion" : false,
+		"extrusionscale" : 1.0,
+		"extrusionsmoothing" : 5,
+		"holes" : true,
+		"material" : "materials/F4mi.json",
+		"padding" : 26,
+		"subdivision" : 3,
+		"texture" : "materials/F4mi"
+	}
+}

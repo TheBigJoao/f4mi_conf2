@@ -1,0 +1,5 @@
+{
+	"autosize" : true,
+	"material" : "materials/F4mi.json",
+	"puppet" : "models/F4mi_puppet.mdl"
+}

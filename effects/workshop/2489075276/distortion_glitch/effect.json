@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2489075276/effects/distortion_glitch.json",
+		"shaders/workshop/2489075276/effects/distortion_glitch.frag",
+		"shaders/workshop/2489075276/effects/distortion_glitch.vert"
+	],
+	"editable" : false,
+	"group" : "localeffects",
+	"name" : "Distortion Glitch",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2489075276/effects/distortion_glitch.json"
+		}
+	],
+	"replacementkey" : "distortion_glitch",
+	"version" : 1
+}

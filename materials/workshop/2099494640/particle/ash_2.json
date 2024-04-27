@@ -1,0 +1,18 @@
+{
+	"passes" : 
+	[
+		{
+			"blending" : "translucent",
+			"combos" : {},
+			"constantshadervalues" : 
+			{
+				"ui_editor_properties_overbright" : 1.33
+			},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericparticle",
+			"textures" : [ "workshop/2099494640/particle/card front" ]
+		}
+	]
+}

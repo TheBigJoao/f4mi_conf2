@@ -1,0 +1,21 @@
+{
+	"passes" : 
+	[
+		{
+			"blending" : "additive",
+			"combos" : 
+			{
+				"REFRACT" : 0
+			},
+			"constantshadervalues" : 
+			{
+				"ui_editor_properties_overbright" : 1.5
+			},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericparticle",
+			"textures" : [ "workshop/2636674662/particle/minecraft_firefly2" ]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2812601803/effects/tone_mapping.json",
+		"shaders/workshop/2812601803/effects/tone_mapping.frag",
+		"shaders/workshop/2812601803/effects/tone_mapping.vert"
+	],
+	"editable" : false,
+	"group" : "localeffects",
+	"name" : "Tone mapping",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2812601803/effects/tone_mapping.json"
+		}
+	],
+	"replacementkey" : "tone_mapping",
+	"version" : 1
+}

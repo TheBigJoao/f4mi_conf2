@@ -1,0 +1,19 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2973943998/effects/iris_follow_cursor.json",
+		"shaders/workshop/2973943998/effects/iris_follow_cursor.frag",
+		"shaders/workshop/2973943998/effects/iris_follow_cursor.vert"
+	],
+	"editable" : false,
+	"group" : "localeffects",
+	"name" : "Iris Follow Cursor",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2973943998/effects/iris_follow_cursor.json"
+		}
+	],
+	"replacementkey" : "iris_follow_cursor",
+	"version" : 1
+}

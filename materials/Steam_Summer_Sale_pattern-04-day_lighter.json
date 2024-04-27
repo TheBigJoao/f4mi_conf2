@@ -1,0 +1,19 @@
+{
+	"passes" : 
+	[
+		{
+			"alphawriting" : "default",
+			"blending" : "normal",
+			"combos" : 
+			{
+				"SPRITESHEET" : 1,
+				"VERSION" : 2
+			},
+			"cullmode" : "normal",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericimage2",
+			"textures" : [ "Steam_Summer_Sale_pattern-04-day_lighter" ]
+		}
+	]
+}

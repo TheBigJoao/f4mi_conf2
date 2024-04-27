@@ -1,0 +1,20 @@
+{
+	"passes" : 
+	[
+		{
+			"alphawriting" : "default",
+			"blending" : "translucent",
+			"combos" : 
+			{
+				"FOG" : 0,
+				"LIGHTING" : 0,
+				"VERSION" : 2
+			},
+			"cullmode" : "normal",
+			"depthtest" : "enabled",
+			"depthwrite" : "enabled",
+			"shader" : "genericimage3",
+			"textures" : [ "workshop/3187908708/Media Area" ]
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"passes" : 
+	[
+		{
+			"alphawriting" : "default",
+			"blending" : "translucent",
+			"combos" : 
+			{
+				"LIGHTING" : 0,
+				"VERSION" : 2
+			},
+			"cullmode" : "nocull",
+			"depthtest" : "disabled",
+			"depthwrite" : "disabled",
+			"shader" : "genericimage2",
+			"textures" : 
+			[
+				"VinylDisc",
+				null,
+				"masks/pngfind.com-vinyl-disc-png-4611544_mask_670de0ce"
+			]
+		}
+	]
+}
